@@ -1,0 +1,84 @@
+.content_wrapper {
+    position: absolute;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.bio_container {
+    display: block;
+    height: 220vh;
+    background-image: url('../../../assets/image/bio_1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: auto;
+}
+
+.content_wrapper {
+    position: absolute;
+    opacity: 0;
+    left: 30%;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    max-width: 500px;
+}
+
+.content_wrapper.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.bio_title {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.bio_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    word-wrap: break-word;
+    background-color: rgba(240, 240, 240, 0.5);
+    backdrop-filter: blur(1px);
+    border-radius: 8px;
+    padding: 20px;
+    color: white;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 900px) {
+    .content_wrapper {
+        left: 30%;
+    }
+}
+
+@media (max-width: 800px) {
+    .content_wrapper {
+        left: 20%;
+    }
+}
+
+@media (max-width: 700px) {
+    .content_wrapper {
+        left: 10%;
+    }
+}
+
+@media (max-width: 600px) {
+    .content_wrapper {
+        left: 5%;
+    }
+}
+
+@media (max-width: 390px) {
+    .content_wrapper {
+        left: 0.5%;
+        max-width: 300px;
+    }
+}
